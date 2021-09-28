@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Indie+Flower&family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+
+body{
+    text-align: center;
+    background-image: linear-gradient(to bottom,rgb(233, 8, 8), rgb(138, 16, 16));
+}
+
+.encabezado{
+    width: 100%;
+    height: 270px;
+    background-image: url("./multimedia/fondo-madera2.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.direccionUsuarioIngresar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+.direccionUsuarioIngresar label{
+    font-family: 'Dancing Script', cursive;
+    color: rgb(243, 243, 9);
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px; 
+}
+.direccionUsuarioIngresar input{
+    margin-bottom: 10px;
+}
+
+.direccionUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.direccionUsuario p {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(243, 243, 9);
+    text-shadow: 2px 2px 1px black;
+    font-size: 30px; 
+}
+.botonDireccion{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(204, 204, 0);
+    border-radius: 5px;
+    border: solid 1px black;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+    transition: all 1s;
+}
+.botonDireccion:hover{
+    background-color: rgb(243, 243, 9);
+    border-radius: 20px;
+}
+.botonDireccion:focus {
+    outline: none;
+  }
+
+.contenedorGrande{
+    background-image: url(./multimedia/fondo-comida-blur.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur() ;
+}
+.contenedor1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.seccionPrecios{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px;
+    background-image: url("./multimedia/fondo-madera2.jpg");
+    background-size: cover;  
+    border-radius: 10px;
+    width: 40%;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+}
+.seccionPrecios h1{
+    font-family: 'Dancing Script', cursive;
+    color:rgb(243, 243, 9) ;
+    text-shadow: 2px 2px 1px black;
+}
+.seccionPrecios ul li{
+    list-style-type:none;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 2px;
+    background-color: rgb(243, 243, 9);
+    line-height: 50px;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+    margin: 5px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.seccionPrecios ul li:hover{
+    transform: translate(20px);
+}
+.seccionImagenes{
+    width: 40%;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+}
+
+.fondoGaseosa{
+    background-image: url("multimedia/gaseosa2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 452px;
+}
+.fondoPapas{
+    background-image: url("multimedia/papas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 452px;
+}
+.fondoHamburguesa{
+    background-image: url("multimedia/hamburguesa.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 452px;
+}
+.fondoHamburguesa2{
+    background-image: url("multimedia/hamburguesa2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 452px;
+}
+.fondoNuggets{
+    background-image: url("multimedia/nuggets.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 452px;
+}
+
+
+
+.contenedor2{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px;
+}
+
+.botonAñadir{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(204, 204, 0);
+    border-radius: 5px;
+    border: solid 1px black;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+    transition: all 1s;
+}
+.botonAñadir:hover{
+    background-color: rgb(243, 243, 9);
+    border-radius: 20px;
+}
+.botonAñadir:focus {
+    outline: none;
+  }
+
+
+
+
+
+
+#carritoDeCompras{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(243, 243, 9) ;
+    box-shadow: 5px 5px 5px rgb(68, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: all 1s;
+    cursor: pointer;
+}
+#carritoDeCompras:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+#carritoDeCompras img{
+
+    width: 70%;
+    height: 70%;
+}
+
+
+
+.modal-header{
+    background-image: url(./multimedia/fondo-madera.jpg);
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+    color:rgb(243, 243, 9) ;
+    text-shadow: 2px 2px 1px black;
+}
+.modal-footer{
+    background-image: url(./multimedia/fondo-madera.jpg);
+    background-size: cover;
+}
+
+
+#modalCarritoTexto{
+    background-image: url(./multimedia/fondo-papel.jpg);
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+    letter-spacing: 3px;
+  
+}
+#modalCarritoTexto ul{
+    list-style-type:none;
+    text-align: left;
+    
+}
+#modalCarritoTexto ul p{
+    font-weight: bold;
+}
+
+
+
+.modalOrdenFinalizada{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background-color: whitesmoke;
+    z-index: 5;
+    width: 500px;
+    height: 400px;
+}
+.modalOrdenFinalizada.activo{
+    transform: translate(-50%, -50%) scale(1);
+    
+}
+.modalOrdenFinalizada-header{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #8dc241 95%, rgb(243, 243, 9)) ;
+    border-bottom: 3px solid rgb(243, 243, 9) ;
+
+}
+.modalTitulo{
+    color:black ;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.botonCerrar{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color:rgb(243, 243, 9) ;
+    position: absolute;
+    top: -7px;
+    right: 6px;
+}
+.botonCerrar:focus{
+    outline: none;
+}
+.modalOrdenFinalizada-body{
+    text-align: center;
+    background-image: url(./multimedia/fondo-madera4.jpg);
+    background-image: linear-gradient(to bottom, rgb(243, 243, 9),rgba(0, 0, 0, 0)9px),url(./multimedia/fondo-madera4.jpg); ;
+    background-size: cover;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+.modalOrdenFinalizada-body div{
+    padding: 20px ;
+    font-weight: bold;
+}
+.modalOrdenFinalizada-body img{
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(whitesmoke, rgba(255, 255, 255, 0) 80%);
+}
+#overlayModal{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+#overlayModal.activo{
+    pointer-events: all;
+    opacity: 1;
+}
+
+
+
+.footer{
+    width: 100%;
+    height: 200px;
+    background-image: url("./multimedia/fondo-madera2.jpg");
+    background-size: cover;
+}

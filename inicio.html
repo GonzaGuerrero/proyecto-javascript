@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+
+<header class="encabezado" id="encabezado">
+
+  <div class="direccionUsuarioIngresar">
+    <label class="form-label">Calle:</label>
+    <input type="text" class="form-control" id="calleUsuario">
+    <label class="form-label">Altura:</label>
+    <input type="text" class="form-control" id="alturaCalleUsuario">
+    <button type="button" class="botonDireccion" onclick="ingresarDireccion()">Ingresar</button>
+  </div>
+ 
+
+</header>
+
+
+    <div class="contenedorGrande">
+      <div class="contenedor1">
+
+        <div class="seccionPrecios">
+            <h1>Lista de precios</h1>
+            <ul>
+                <li id="opcionGaseosa" onclick="mostrarGaseosa()" >Gaseosa - $100 </li>
+                <li id="opcionPapas" onclick="mostrarPapas()" >Papas Fritas - $200</li>
+                <li id="opcionNuggets" onclick="mostrarNuggets()" >Nuggets de pollo - $250</li>
+                <li id="opcionHamburguesa" onclick="mostrarHamburguesa()" >Hamburguesa completa - $300</li>
+                <li id="opcionHamburguesa2" onclick="mostrarHamburguesa2()" >Hamburguesa especial - $400</li>
+            </ul>
+        </div>
+        <div id="imagenItem" class="seccionImagenes">
+
+        </div>
+    </div>
+    <div class="contenedor2">
+        <button onclick="agregarAlCarrito()" class="botonAñadir" id="botonAñadir">Añadir al carro</button>
+    </div>
+    </div>
+
+    
+    <div id="carritoDeCompras" data-toggle="modal" data-target="#modalCarrito"> <img src="./multimedia/carrito2.png" alt=""></div>
+     
+    <div class="modal fade" id="modalCarrito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title" id="exampleModalLabel">Carro de compras</h1>
+            </div>
+            <div class="modal-body" id="modalCarritoTexto">
+              Aún no añadiste nada a tu carrito.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="botonAñadir" data-dismiss="modal">Cerrar</button>
+              <button type="button" class="botonAñadir" onclick="finalizarOrden()" data-dismiss="modal">Finalizar Orden</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modalOrdenFinalizada" id="modalOrdenFinalizada">
+      <div class="modalOrdenFinalizada-header">
+        <h1 class="modalTitulo">Se confirmó tu orden!</h1>
+        <button class="botonCerrar" onclick="cerrarModalOrdenFinalizada()">&times; </button> 
+      </div>
+      <div class="modalOrdenFinalizada-body">
+        <div>Tu envío está siendo procesado</div>
+        <img src="./multimedia/tilde_2.png" alt="tilde">
+      </div>
+    </div>
+    <div id="overlayModal"></div>
+
+
+    <div class="footer"></div>
+
+    <script src="./inicio.js"></script>
+    <script src="./fuciones.js"></script>
+</body>
+</html>
